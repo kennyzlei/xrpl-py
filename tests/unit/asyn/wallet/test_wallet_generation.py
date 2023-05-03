@@ -44,8 +44,8 @@ class TestWallet(TestCase):
         self.assertEqual(get_faucet_url(ws_client_url), expected_faucet)
 
     def test_get_faucet_wallet_hooks_v2_test(self):
-        json_client_url = "https://hooks-testnet-v2.xrpl-labs.com"
-        ws_client_url = "wss://hooks-testnet-v2.xrpl-labs.com"
+        json_client_url = "https://hooks-testnet-v3.xrpl-labs.com"
+        ws_client_url = "wss://hooks-testnet-v3.xrpl-labs.com"
         expected_faucet = _HOOKS_V2_TEST_FAUCET_URL
 
         self.assertEqual(get_faucet_url(json_client_url), expected_faucet)
